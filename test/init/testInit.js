@@ -1,14 +1,14 @@
-'use strict'
+'use strict';
 
 const chai = require('chai')
-    , chaiHttp = require('chai-http');
+  ; const chaiHttp = require('chai-http');
 
 function initTests() {
-    chai.use(chaiHttp);
-    global.expect = chai.expect;
-    global.request = chai.request;
+  chai.use(chaiHttp);
+  global.expect = chai.expect;
+  global.request = chai.request;
 };
 
 module.exports = {
-    initTests,
-}
+  initTests,
+};
